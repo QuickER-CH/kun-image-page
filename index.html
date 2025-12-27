@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片查看页面</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, 微软雅黑, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .display-img {
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .img-desc {
+            margin-top: 20px;
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>查看图片</h1>
+    <!-- 关键修改：src已替换为KUN.png -->
+    <img class="display-img" 
+         src="KUN.png"  <!-- 已改为你的图片名KUN.png -->
+         alt="KUN图片"  <!-- 图片加载失败时显示的文字也对应修改 -->
+    >
+    <p class="img-desc">这是名为KUN.png的展示图片</p>
+</body>
+</html>
